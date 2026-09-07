@@ -5,21 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>我的个人主页</title>
+    <title>王龙 | Personal Homepage</title>
+
+    <style>
+        body {
+            font-family: Arial, "Microsoft YaHei", sans-serif;
+            margin: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            width: 900px;
+            max-width: 90%;
+            margin: 60px auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .photo {
+            width: 180px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .info h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        h2 {
+            margin-top: 45px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 700px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .photo {
+                width: 150px;
+                height: 180px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <h1>你好，我是王龙</h1>
+<div class="container">
 
-    <p>
-        欢迎来到我的个人学术主页。
-    </p>
+    <div class="header">
+
+        <img src="photo.jpg" class="photo">
+
+        <div class="info">
+
+            <h1>王龙</h1>
+
+            <p>
+                Ph.D. Student
+            </p>
+
+            <p>
+                XXX University
+            </p>
+
+            <p>
+                Research Interests:
+                Machine Learning, Graph Neural Networks,
+                Graph Representation Learning
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:your-email@example.com">
+                    your-email@example.com
+                </a>
+            </p>
+
+        </div>
+
+    </div>
 
     <h2>About Me</h2>
 
     <p>
-        我目前主要关注大规模图神经网络等研究方向。
+        我目前是一名博士研究生，研究方向主要包括机器学习、
+        图神经网络与图表示学习。
+        目前正在学习和探索图结构数据上的表示学习方法及其相关应用。
     </p>
 
     <h2>Research Interests</h2>
@@ -28,13 +132,31 @@
         <li>Machine Learning</li>
         <li>Graph Neural Networks</li>
         <li>Graph Representation Learning</li>
+        <li>Data Mining</li>
+    </ul>
+
+    <h2>Education</h2>
+
+    <ul>
+        <li>2026 - Present, Ph.D., XXX University</li>
+        <li>2023 - 2026, M.S., XXX University</li>
     </ul>
 
     <h2>Contact</h2>
 
     <p>
-        Email: wll200012352@163.com
+        Email:
+        your-email@example.com
     </p>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/wanglong12352">
+            github.com/wanglong12352
+        </a>
+    </p>
+
+</div>
 
 </body>
 
